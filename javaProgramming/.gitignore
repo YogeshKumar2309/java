@@ -1,0 +1,33 @@
+# Compiled Java files
+
+*.class
+
+# Java build/output folders
+
+bin/
+out/
+target/
+
+# IDE settings
+
+.vscode/
+.idea/
+
+# IntelliJ project files
+
+*.iml
+
+# Eclipse project files
+
+.classpath
+.project
+.settings/
+
+# OS files
+
+.DS_Store
+Thumbs.db
+
+# Logs
+
+*.log
