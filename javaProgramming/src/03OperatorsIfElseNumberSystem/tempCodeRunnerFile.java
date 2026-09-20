@@ -1,1 +1,0 @@
-areaOfTriangle
