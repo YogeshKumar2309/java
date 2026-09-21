@@ -102,6 +102,22 @@ This method is much faster, achieving
         return new int[] {}; 
     }
 
+
+    public  static  int[] towSum3(int[] numbers, int target) {
+
+        HashMap <Integer, Integer> map = new HashMap<>();
+
+        for(int i = 0; i < numbers.length; i++){
+            int complement = target - numbers[i];
+
+            if(map.containsKey(complement)){
+                return new int[] {map.get(complement),i};
+            }
+            map.put(numbers[i], i);
+        }
+
+        return null;
+    }
     public static void main(String[] args) {
 
         int[] arr = {0, 2, 7, 11, 15};
@@ -116,5 +132,8 @@ This method is much faster, achieving
         //twoSum2
         int[] result2 = towSum2(arr, target);
            System.out.println("result 2 => " + result2[0] + ", " + result2[1]);
+        //twoSum3
+        int[] result3 = towSum2(arr, target);
+           System.out.println("result 3 => " + result3[0] + ", " + result3[1]);
     }
 }
